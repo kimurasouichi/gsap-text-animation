@@ -6,15 +6,32 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
   <script type="module" src="/src/js/main.js"></script>
-  <link rel="stylesheet" href="/src/styles/style.scss">
+  <link rel="stylesheet" href="/src/scss/style.scss">
 </head>
 
 <body>
-  <h1>
-    <span class="addSpan js-text-1">タイトルテキスト</span>
-    <span class="line js-text-2"></span>
-  </h1>
+  <div class="content flex-column wrap">
+    <h2>
+      <span class="addSpan js-text-1">タイトルテキスト</span>
+      <span class="line js-text-2"></span>
+    </h2>
+
+    <h2 class="cover flex-column">
+      <span class="cover__cont">
+        <span class="js-cover-2">TEXT-ANIMATION</span>
+        <span class="js-cover-1"></span>
+        <span class="js-cover-3"></span>
+      </span>
+      <span class="cover__cont">
+        <span class="js-cover-2">テキストアニメーション</span>
+        <span class="js-cover-1"></span>
+        <span class="js-cover-3"></span>
+      </span>
+    </h2>
+  </div><!-- /.content -->
+
 </body>
 
 </html>

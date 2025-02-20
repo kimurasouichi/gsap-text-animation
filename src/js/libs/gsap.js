@@ -2,9 +2,10 @@ import gsap from "gsap";
 
 export class GsapAnimation {
   constructor() {
-    this.init();
+    this.initText();
+    this.initCover();
   }
-  init() {
+  initText() {
     const tl = gsap.timeline();
 
     tl.from(".js-text-1 span", {
@@ -26,7 +27,30 @@ export class GsapAnimation {
         {
           x: "100%",
         },
-        "-=0.5"
+        "-=0.3"
       );
+  }
+
+  initCover() {
+    const cover = gsap.timeline();
+    cover
+      .from(".js-cover-1", {
+        x: "-110%",
+        delay: 2,
+        stagger: 0.1,
+      })
+      .to(".js-cover-2", {
+        visibility: "visible",
+      })
+      .to(
+        ".js-cover-3",
+        {
+          visibility: "visible",
+        },
+        "<"
+      )
+      .to(".js-cover-3", {
+        x: "110%",
+      });
   }
 }
